@@ -20,3 +20,5 @@ app.event("member_joined_channel", async ({ event, client }) => {
         })
     }
 })
+
+export default receiver.app;
