@@ -1,6 +1,7 @@
 import { App, ExpressReceiver } from "@slack/bolt";
 
 const receiver = new ExpressReceiver({
+    endpoints: "/api/events",
     signingSecret: process.env.SLACK_SIGNING_SECRET!,
     processBeforeResponse: true,
 })
